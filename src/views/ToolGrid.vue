@@ -19,6 +19,11 @@
         </a-row>
         <a-row :gutter="[16,16]">
             <a-col :span="8">
+                <a-card @click="toolGridClick('Memorandum')">
+                    Redis Desktop
+                </a-card>
+            </a-col>
+            <a-col :span="8">
                 <a-card>
                     敬请期待
                 </a-card>
