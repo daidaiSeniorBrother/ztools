@@ -17,9 +17,4 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-
-    .darkBack, .ant-layout-footer, .ant-card {
-        color: rgba(255, 255, 255, 0.65) !important;
-        background: #001529 !important;
-    }
 </style>

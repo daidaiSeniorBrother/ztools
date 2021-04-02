@@ -50,15 +50,5 @@
 </script>
 
 <style scoped>
-    /deep/ .ant-page-header-back-button {
-        color: #ddd;
-    }
 
-    /deep/ .ant-page-header-heading-title {
-        color: #ddd;
-    }
-
-    /deep/ .ant-page-header-heading-sub-title {
-        color: #ddd;
-    }
 </style>

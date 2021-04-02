@@ -130,34 +130,13 @@
 </script>
 
 <style scoped>
-    /deep/ .ant-tabs-tab {
-        color: rgba(255, 255, 255, 0.65) !important;
-        background: #001529 !important;
-    }
 
     /deep/ .ant-tabs-close-x {
         position: absolute;
         top: 12px;
     }
 
-    /deep/ .ant-tabs-nav .ant-tabs-tab-active {
-        color: #1890ff !important;
-    }
-
     /deep/ .ant-tabs-left-bar {
         width: 150px;
-    }
-
-    /deep/ .ant-tabs-new-tab {
-        color: rgba(255, 255, 255, 0.65) !important;
-    }
-
-    /deep/ .ant-tabs-close-x {
-        color: rgba(255, 255, 255, 0.65) !important;
-    }
-
-    #Memorandum input, textarea {
-        color: rgba(255, 255, 255, 0.65) !important;
-        background: #001529 !important;
     }
 </style>

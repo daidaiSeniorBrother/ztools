@@ -4,7 +4,7 @@
             <div class="logo"><span class="logoText">ZTOOLS</span></div>
             <TopMenu></TopMenu>
         </a-layout-header>
-        <a-layout-content class="contentArea darkBack" :style="{height:contentMinHeight}">
+        <a-layout-content class="contentArea" :style="{height:contentMinHeight}">
             <router-view></router-view>
         </a-layout-content>
         <a-layout-footer :style="{ textAlign: 'center' }">
