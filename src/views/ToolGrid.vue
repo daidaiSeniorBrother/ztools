@@ -23,11 +23,6 @@
                     Redis Desktop
                 </a-card>
             </a-col>
-            <a-col :span="8">
-                <a-card>
-                    敬请期待
-                </a-card>
-            </a-col>
         </a-row>
     </div>
 </template>

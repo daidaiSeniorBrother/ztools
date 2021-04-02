@@ -8,7 +8,7 @@
             <router-view></router-view>
         </a-layout-content>
         <a-layout-footer :style="{ textAlign: 'center' }">
-            ©2021 Created by ztools
+            ©2021 Created By ZTOOLS
         </a-layout-footer>
     </a-layout>
 </template>

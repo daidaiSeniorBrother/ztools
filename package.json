@@ -1,5 +1,7 @@
 {
   "name": "ztools",
+  "author": "leonard",
+  "description": "a small tool list",
   "version": "1.0.0",
   "private": true,
   "scripts": {

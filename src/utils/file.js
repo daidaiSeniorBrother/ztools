@@ -1,24 +1,31 @@
 const fs = require("fs");
 const path = require('path');
-const base_path = process.cwd();
-const mac_memorandum_dir_path = base_path + "/memorandum";
+const USER_HOME = process.env.NODE_ENV === 'production' ? JSON.parse(JSON.stringify(process)).env.HOME + "/ztools" : process.cwd();
+
+const mac_memorandum_dir_path = USER_HOME + "/memorandum";
 
 function readDir(pathName, callBack) {
     fs.readdir(pathName, function (err, files) {
-        let dirs = [];
-        (function iterator(i) {
-            if (i === files.length) {
-                callBack(dirs);
-                return;
+            let dirs = [];
+            if (files && files.length > 0) {
+                (function iterator(i) {
+                    if (i === files.length) {
+                        callBack(dirs);
+                        return;
+                    }
+                    fs.stat(path.join(pathName, files[i]), function (err, data) {
+                        if (data.isFile()) {
+                            dirs.push(files[i]);
+                        }
+                        iterator(i + 1);
+                    });
+                })(0);
+            } else {
+                fs.mkdir(mac_memorandum_dir_path + '/', {recursive: true}, err1 => err1);
+                callBack([]);
             }
-            fs.stat(path.join(pathName, files[i]), function (err, data) {
-                if (data.isFile()) {
-                    dirs.push(files[i]);
-                }
-                iterator(i + 1);
-            });
-        })(0);
-    });
+        }
+    );
 }
 
 export function delFile(type, name) {
